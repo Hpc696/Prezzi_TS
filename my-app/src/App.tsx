@@ -1,8 +1,10 @@
 import React from 'react';
-import './assets/App.css';
-import { Container, Row, Col, Table} from 'react-bootstrap';
+import { Container, Table} from 'react-bootstrap';
 import AppDropdown from './components/Dropdown';
 import AppPagination from './components/Pagination';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import './assets/App.css';
 
 interface IPrezzo {
   Data: string;
@@ -50,12 +52,12 @@ function App() {
   <>
   <Container> 
     
-    <h2> PREZZI CARBURANTI </h2>
+    <h2 className='m-5 text-center'> PREZZI CARBURANTI </h2>
 
     
     <Table bordered hover>
-      <thead> 
-        <tr>
+      <thead className='bg-primary'> 
+        <tr className='text-white'>
 					<th>Data Rilevazione</th>
 					<th> Benzina </th>
 					<th> Gasolio </th>
