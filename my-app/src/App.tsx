@@ -20,7 +20,7 @@ function App() {
 		try{
 			const r = await fetch('http://localhost:4000/csv', {'mode': 'cors'});
 			const j = await r.json();
-			console.log(j)
+			//console.log(j)
 			setPrezzi(j)
 		} catch (err){
 				console.error(err)

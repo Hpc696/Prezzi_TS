@@ -15,7 +15,7 @@ export default function AppPagination(props:IPagination){
     function prevPage(){ //dico a funz prevpage di richiamare funzione nel caso (if)-1 nell app.js 
         if(currentpage>1) //evito click su bottone previous quando non ho pagine prima da vedere rispetto alla corrente 
         props.onChange(currentpage=-1)
-    } console.log(props)
+    } //console.log(props)
     function nextPage(){
         if(currentpage<pages){
             props.onChange(currentpage=1)
